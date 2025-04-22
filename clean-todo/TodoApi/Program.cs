@@ -7,7 +7,7 @@ using TodoApi; // Firebase middleware için
 var builder = WebApplication.CreateBuilder(args);
 
 // 🔐 Firebase JSON dosyasını environment variable'dan oku
-var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_CONFIG_JSON");
+var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_CONFIG");
 
 FirebaseApp.Create(new AppOptions
 {
